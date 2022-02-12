@@ -34,7 +34,18 @@ button {
   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
+button:hover {
+  filter: brightness(97%);
+}
 
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
 
 @media screen and (max-width: 1000px) {
   .container {
@@ -42,6 +53,6 @@ button {
     background-position: center center;
   }
   button {
-      box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
   }
 }
