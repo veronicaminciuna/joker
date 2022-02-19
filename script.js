@@ -32,7 +32,6 @@ async function getJokes() {
         }
 
         console.log(joke);
-        // const response = await;
     } catch (error) {
        console.log('New error', error); 
     }
