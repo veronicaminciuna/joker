@@ -42,4 +42,10 @@ async function getJokes() {
        console.log('New error', error); 
     }
 }
-getJokes()
+
+button.addEventListener('click', getJokes);
+
+
+
+
+// getJokes()
