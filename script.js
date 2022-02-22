@@ -35,8 +35,9 @@ async function getJokes() {
         } else {
             joke = data.joke;
         }
-
+        //Text to speech
         tellMe(joke)
+        toggleButton()
     } catch (error) {
        console.log('New error', error); 
     }
