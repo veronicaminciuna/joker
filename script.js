@@ -17,7 +17,7 @@ function tellMe(joke){
     key: '03ad45c6e20349428905cf5fd4759fe0',
     src: jokeString,
     hl: 'en-us',
-    // v: 'Linda',
+    v: 'Linda',
     r: 0, 
     c: 'mp3',
     f: '44khz_16bit_stereo',
@@ -41,14 +41,8 @@ async function getJokes() {
         tellMe(joke)
         toggleButton()
     } catch (error) {
-    //    console.log('New error', error); 
     }
 }
 
 button.addEventListener('click', getJokes);
 audioElement.addEventListener('ended',toggleButton);
-
-
-
-
-//03ad45c6e20349428905cf5fd4759fe0
